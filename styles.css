@@ -6,3 +6,100 @@
     margin: 0;
     padding: 0;
 }
+
+/* COVER */
+
+#cover {
+    width: 100%;
+    height: 100vh;
+    background: url('./img/cover.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    width: 60%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 1rem;
+    height: 50%;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    z-index: 1;
+}
+
+header nav a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    font-weight: 600;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas";
+    text-transform: uppercase;
+    font-size: 9vw;
+    line-height: 80%;
+    position: absolute;
+    left: 25%;
+    top: 28%;
+}
+
+h1 span:first-child {    
+    color: #4d4d4d;
+}
+
+h1 span:last-child {
+    color: #414f6b;
+}
+
+#cover>img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+/* HISTORY */
+
+#history {
+    height: 100vh;
+    background-color: beige;
+}
+
+/* TEAM */
+
+#team {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    #cover>img {
+        display: none;
+    }
+}
