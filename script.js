@@ -6,11 +6,13 @@ function headerOnScroll() {
         document.querySelectorAll('.nav-link').forEach(navLink => {
             navLink.style.color = '#fff'
         })
+        document.querySelector('.brand-name').style.display = 'none'
     } else {
         header.classList.add('header-on-scroll')
         document.querySelectorAll('.nav-link').forEach(navLink => {
             navLink.style.color = '#414f6b'
         })
+        document.querySelector('.brand-name').style.display = 'flex'
     }
 }
 
