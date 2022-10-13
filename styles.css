@@ -128,13 +128,54 @@ h1 span:last-child {
     height: 100vh;
     background: url('./img/background-1.png') no-repeat center;
     background-size: cover;
+    position: relative;
+}
+
+#history .content {
+    position: absolute;
+    top: 5vh;
+    left: 20%;  
+    right: 20%;  
+}
+
+#history .content .content-title {
+    display: flex;
+    align-items: center;
+}
+
+#history .content .content-title span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+}
+
+#history .content .content-title span:first-child {
+    font-size: 7vw;
+    color: #6d7d98;
+}
+
+#history .content .content-title span:last-child {
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-left: -2.5%;
+    color: #414f6b;
+}
+
+#history .content .text {
+    display: flex;
+    justify-content: center;
+}
+
+#history .content .text p {
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-weight: 300;
 }
 
 /* TEAM */
 
 #team {
     height: 100vh;
-    background-color: aquamarine;
 }
 
 /* RESPONSIVE */

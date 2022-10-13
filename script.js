@@ -17,3 +17,5 @@ function headerOnScroll() {
 }
 
 window.addEventListener('scroll', headerOnScroll)
+
+// ADD TRANSITION
