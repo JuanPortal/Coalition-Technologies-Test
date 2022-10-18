@@ -52,4 +52,46 @@ slider3.addEventListener('click', () => {
     slider3.style.backgroundColor = '#fff'
 })
 
-// ADD TRANSITION
+// MOUNTAINS BACKGROUND AND SCHEDULE
+
+const mountain1 = document.querySelector('.mountain1')
+const mountain2 = document.querySelector('.mountain2')
+const mountainContent = document.querySelector('.mountain-content')
+
+const scheduleH2 = document.querySelector('#schedule-h2')
+const date1 = document.querySelector('.date1')
+const date2 = document.querySelector('.date2')
+const date3 = document.querySelector('.date3')
+const date4 = document.querySelector('.date4')
+const journey1 = document.querySelector('.journey1')
+const journey2 = document.querySelector('.journey2')
+
+mountain1.addEventListener('click', () => {
+    mountainContent.style.background = 'url("./img/background-2.png")'
+    mountainContent.style.backgroundRepeat = 'no-repeat'
+    mountainContent.style.backgroundSize = 'cover'
+    mountainContent.style.backgroundPosition = 'center'
+    scheduleH2.style.fontWeight = '400'
+    date1.textContent = '25 Nov 2016'
+    date2.textContent = '28 Nov 2016'
+    date3.textContent = '18 Dic 2016'
+    date4.textContent = '7 Jan 2017'
+    journey1.style.marginBottom = '0.7em'
+    journey2.style.marginBottom = '1.5em'
+})
+
+mountain2.addEventListener('click', () => {
+    mountainContent.style.background = 'url("./img/background-3.png")'
+    mountainContent.style.backgroundRepeat = 'no-repeat'
+    mountainContent.style.backgroundSize = 'cover'
+    mountainContent.style.backgroundPosition = 'center'
+    scheduleH2.style.fontWeight = '600'
+    date1.textContent = '17 Nov 2016'
+    date2.textContent = '13 Dec 2016'
+    date3.textContent = '28 Dec 2016'
+    date4.textContent = '9 Feb 2017'
+    journey1.style.marginBottom = '1.5em'
+    journey2.style.marginBottom = '0.7em'
+})
+
+// TRANSITION

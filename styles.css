@@ -146,6 +146,7 @@ h1 span:last-child {
 #history .content .content-title span {
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
+    margin-left: .5rem;
 }
 
 #history .content .content-title span:first-child {
@@ -237,7 +238,188 @@ h1 span:last-child {
 /* TEAM */
 
 #team {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#team .team-header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#team .team-header .team-header-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#team .team-header .team-header-container .team-header-title {
+    display: flex;
+    align-items: center;
+}
+
+#team .team-header .team-header-container .team-header-title span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+
+#team .team-header .team-header-container .team-header-title span:first-child {
+    font-size: 7vw;
+    color: #a0a7b5;
+}
+
+#team .team-header .team-header-container .team-header-title span:last-child {
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-left: -8.8%;
+    color: #414f6b;
+}
+
+#team .team-header .team-header-container .text {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+}
+
+#team .team-header .team-header-container .text p {
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-weight: 300;
+}
+
+#team .tabs {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414f6b;
+}
+
+#team .tabs .tabs-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#team .tabs .tabs-container div {
+    height: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw;
+    color: #b0b4be;
+    cursor: pointer;
+}
+
+#team .tabs .tabs-container div:hover {
+    color: #414f6b;
+    background-color: #b0b4be;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#team .mountain-content {
+    background: url('./img/background-2.png') no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+#team .mountain-content .schedule {
+    background-color: #ffffff94;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 25%;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+}
+
+#team .mountain-content .schedule h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #414f6b;
+}
+
+#team .mountain-content .schedule .journey {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#team .mountain-content .schedule .journey p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#team .mountain-content .schedule .journey:nth-child(2) {
+    margin-bottom: 0.7em;
+}
+
+#team .mountain-content .schedule .journey:nth-child(3), #team .mountain-content .schedule .journey:nth-child(4) {
+    margin-bottom: 1.5em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #414f6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9.2vh;
+}
+
+footer .footer-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-container .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container .brand span {
+    translate: 0.3em;
+    line-height: 140%;
+}
+
+footer .footer-container .brand span p {
+    font-family: "Bebas";
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: #63769d;
+}
+
+footer .footer-container > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #63769d;
+    text-transform: uppercase;
 }
 
 /* RESPONSIVE */
