@@ -172,6 +172,69 @@ h1 span:last-child {
     font-weight: 300;
 }
 
+#history .carousel {
+    position: absolute;
+    bottom: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: #414f6bbf;
+    display: flex;
+    justify-content: center;
+}
+
+#history .carousel .img-section {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#history .carousel .img-section .img-container {
+    width: 200%;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+#history .carousel .img-section .img-container .images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#history .carousel .img-section .img-container .images img {
+    width: 20%;
+    height: 90%;
+}
+
+#history .carousel .img-section .sliders {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+#history .carousel .img-section .sliders button {
+    width: .8rem;
+    height: .8rem;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #636d81;
+}
+
+#history .carousel .img-section .sliders button:first-child {
+    background-color: #fff;
+}
+
+#history .carousel .img-section .sliders button:hover {
+    background-color: #fff;
+}
+
 /* TEAM */
 
 #team {

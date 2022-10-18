@@ -1,3 +1,5 @@
+// HEADER TO APPEAR ON SCROLL
+
 function headerOnScroll() {
     const header = document.querySelector('header')
     let scrollValue = window.scrollY
@@ -17,5 +19,9 @@ function headerOnScroll() {
 }
 
 window.addEventListener('scroll', headerOnScroll)
+
+// CAROUSEL 
+
+
 
 // ADD TRANSITION
