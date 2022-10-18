@@ -424,8 +424,44 @@ footer .footer-container > p {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #cover>img {
         display: none;
+    }
+
+    #history .content .text p{
+        color: rgb(182, 77, 166);
+    }
+}
+
+@media (min-width: 600px) {
+    #cover>img {
+        display: none;
+    }
+
+    #history .content .text p{
+        color: green;
+    }
+}
+
+@media (min-width: 768px) {
+    #cover>img {
+        display: none;
+    }
+
+    #history .content .text p{
+        color: blue;
+    }
+}
+
+@media (min-width: 992px) {
+    #history .content .text p{
+        color: rgb(95, 89, 89);
+    }
+}
+
+@media (min-width: 1200px) {
+    #history .content .text p{
+        color: red;
     }
 }
